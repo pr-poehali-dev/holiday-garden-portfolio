@@ -302,7 +302,7 @@ const Index = () => {
             </div>
             <div>
               <Icon name="Mail" size={32} className="text-primary mx-auto mb-3" />
-              <div className="font-semibold text-foreground">info@xmasdecor.ru</div>
+              <div className="font-semibold text-foreground">artem_1122@bk.ru</div>
               <div className="text-sm text-muted-foreground">Ответим в течение часа</div>
             </div>
             <div>
