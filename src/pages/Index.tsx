@@ -114,7 +114,7 @@ const Index = () => {
           </div>
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-6 text-foreground leading-tight">
             Создаём новогоднюю<br />
-            <span className="text-primary">сказку</span> для вашего дома
+            <span className="text-[#ffffff]">сказку</span> для вашего дома
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto font-light">Создаем уникальные композиции для максимального погружения в новогоднюю атмосферу.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
