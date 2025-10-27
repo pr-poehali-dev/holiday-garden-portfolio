@@ -116,10 +116,7 @@ const Index = () => {
             Создаём новогоднюю<br />
             <span className="text-primary">сказку</span> для вашего дома
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto font-light">
-            Эксклюзивное оформление домов и садов к празднику.<br />
-            Воплощаем роскошные идеи с 2010 года.
-          </p>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto font-light">Создаем уникальные композиции для максимального погружения в новогоднюю атмосферу.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6">
               Получить консультацию
