@@ -127,12 +127,12 @@ const Index = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-5xl font-bold text-primary mb-2">200+</div>
+              <div className="text-5xl font-bold text-primary mb-2">20+</div>
               <div className="text-muted-foreground">реализованных проектов</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-bold text-primary mb-2">15</div>
-              <div className="text-muted-foreground">лет на рынке</div>
+              <div className="text-5xl font-bold text-primary mb-2">2</div>
+              <div className="text-muted-foreground">года на рынке</div>
             </div>
             <div className="text-center">
               <div className="text-5xl font-bold text-primary mb-2">100%</div>
