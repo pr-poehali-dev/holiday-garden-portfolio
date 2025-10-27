@@ -38,6 +38,8 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     bot_token = os.environ.get('TG_BOT_TOKEN')
     chat_id = os.environ.get('TELEGRAM_CHAT_ID')
     
+    print(f"DEBUG: bot_token exists: {bool(bot_token)}, chat_id exists: {bool(chat_id)}")
+    
     if not bot_token or not chat_id:
         return {
             'statusCode': 500,
@@ -45,7 +47,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*'
             },
-            'body': json.dumps({'error': 'Telegram credentials not configured'})
+            'body': json.dumps({'error': 'Telegram credentials not configured', 'debug': f'token={bool(bot_token)}, chat={bool(chat_id)}'})
         }
     
     body_data = json.loads(event.get('body', '{}'))
@@ -81,8 +83,10 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     req = urllib.request.Request(telegram_url, data=data, method='POST')
     
     try:
+        print(f"DEBUG: Sending to Telegram. URL: {telegram_url[:50]}..., chat_id: {chat_id}")
         with urllib.request.urlopen(req) as response:
             result = response.read()
+            print(f"DEBUG: Telegram response: {result.decode('utf-8')}")
             
         return {
             'statusCode': 200,
@@ -94,6 +98,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
             'body': json.dumps({'success': True, 'message': 'Заявка отправлена'})
         }
     except Exception as e:
+        print(f"ERROR: Failed to send to Telegram: {str(e)}")
         return {
             'statusCode': 500,
             'headers': {
