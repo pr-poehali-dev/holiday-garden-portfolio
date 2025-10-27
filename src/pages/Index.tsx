@@ -24,7 +24,7 @@ const Index = () => {
       description: "Премиальное освещение территории и фасада"
     },
     {
-      image: "https://cdn.poehali.dev/projects/71636491-fa45-4661-af22-918e60704700/files/205fd347-93c0-4936-b91c-2994db7f7327.jpg",
+      image: "https://cdn.poehali.dev/projects/71636491-fa45-4661-af22-918e60704700/files/5a28fb15-44f1-4510-af63-19d830f1d77e.jpg",
       title: "Оформление сада",
       description: "Элегантный декор для открытых пространств"
     }
